@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form đặt hàng</title>
+    <style>
+      div {
+        margin-bottom: 15px;
+      }
+      body {
+        background-color: rgb(228, 230, 233);
+      }
+      input {
+        width: 90%;
+        height: 25px;
+      }
+      button {
+        width: 15%;
+        height: 35px;
+        background-color: rgb(8, 185, 192);
+        color: #ffff;
+        border: rgb(4, 104, 117);
+        font-size: 11px;
+      }
+      select {
+        width: 93%;
+        height: 31px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Try a free sample</h1>
+    <p style="text-align: left">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quam
+      <br />fuga illum sunt, totam maiores sed rem quos corporis numquam dolores
+      <br />
+      perferendis eum eaque id, itaque vitae dignissimos voluptatem eveniet
+      <br />
+      est accusamus fugiat cumque aliquid. Accusamus obcaecati reiciendis
+      <br />cumquevel a saepe quod culpa non corporis temporibus eum, ipsa
+      <br />
+      repudiandae.
+    </p>
+    <form action="">
+      <div>
+        <table width="40%">
+          <div>
+            <tr>
+              <td>
+                <label for="">
+                  <b>First name</b>
+                  <input
+                    type="text"
+                    name="firstname"
+                    id="first-name"
+                    placeholder="First name"
+                  />
+                </label>
+              </td>
+              <td>
+                <label for="last-name">
+                  <b>Last name</b>
+                  <input
+                    type="text"
+                    name="lastname"
+                    id="last-name"
+                    placeholder="Last name"
+                  />
+                </label>
+              </td>
+            </tr>
+          </div>
+          <div>
+            <tr>
+              <td>
+                <label for="email-adress">
+                  <b>Email adress</b>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email-adress"
+                    placeholder="@gmail.com"
+                  />
+                </label>
+              </td>
+              <td>
+                <label for="adress">
+                  <b>Adress</b>
+                  <input type="text" name="adress" id="adress" />
+                </label>
+              </td>
+            </tr>
+          </div>
+          <div>
+            <tr>
+              <td>
+                <label for="city">
+                  <b>City</b><input type="text" name="city" id="city" />
+                </label>
+              </td>
+              <td>
+                <label for="state">
+                  <b>State</b><input type="text" name="state" id="state" />
+                </label>
+              </td>
+            </tr>
+          </div>
+          <div>
+            <tr>
+              <td>
+                <label for="zip-code">
+                  <b>ZIP code</b>
+                  <input type="text" name="zipcode" id="zip-code" />
+                </label>
+              </td>
+              <td>
+                <label for="country">
+                  <b>Country</b>
+                  <select name="country" id="country">
+                    <option value="Viet nam">Viet Nam</option>
+                    <option value="Russia">Russia</option>
+                    <option value="Laos">Laos</option>
+                    <option value="Cuba">Cuba</option>
+                  </select>
+                </label>
+              </td>
+            </tr>
+          </div>
+        </table>
+      </div>
+      <div><button>SEND MEE FREE COFFEE</button></div>
+    </form>
+  </body>
+</html>

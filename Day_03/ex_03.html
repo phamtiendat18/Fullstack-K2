@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Access Manager</title>
+    <link rel="stylesheet" href="css/ex_03.css" />
+  </head>
+  <body>
+    <div>
+      <form action="">
+        <div class="name-form">
+          <div class="name-label">
+            <label for="username">User name:</label>
+          </div>
+          <div class="name-input">
+            <input type="text" name="username" id="username" />
+          </div>
+        </div>
+        <div class="password-form">
+          <div class="password-label">
+            <label for="password">Password:</label>
+          </div>
+          <div class="password-input">
+            <input type="password" name="password" id="password" />
+          </div>
+        </div>
+        <div class="city-form">
+          <div class="city-label">
+            <label for="city">City of Employment:</label>
+          </div>
+          <div class="city=input">
+            <input type="text" name="username" id="city" />
+          </div>
+        </div>
+        <div class="sever-form">
+          <div class="sever-label">
+            <label for="sever">Web sever:</label>
+          </div>
+          <div class="sever-option">
+            <select name="sever" id="sever">
+              <option value="unknown">--Choose a sever--</option>
+            </select>
+          </div>
+        </div>
+        <div class="radio-form">
+          <div class="radio-label">
+            <label>Please specify your role:</label>
+          </div>
+          <div class="radio-choose">
+            <div>
+              <label> <input type="radio" name="position" />Admin </label>
+            </div>
+            <div>
+              <label> <input type="radio" name="position" />Engineer </label>
+            </div>
+            <div>
+              <label> <input type="radio" name="position" />Manager </label>
+            </div>
+            <div>
+              <label> <input type="radio" name="position" />Guest </label>
+            </div>
+          </div>
+        </div>
+        <div class="checkbox-form">
+          <div class="checkbox-label">
+            <label>Single Sign-on to the following:</label>
+          </div>
+          <div class="checkbox-check">
+            <div>
+              <label><input type="checkbox" name="service" />Mail</label>
+            </div>
+            <div>
+              <label><input type="checkbox" name="service" />Payroll</label>
+            </div>
+            <div>
+              <label>
+                <input type="checkbox" name="service" />Self-service
+              </label>
+            </div>
+          </div>
+          <div class="button-form">
+            <div class="button-login"><button>Login</button></div>
+            <div class="button-reset"><button type="reset">Reset</button></div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

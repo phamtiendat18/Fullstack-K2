@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+}
+
+.name-form{
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+.password-form{
+    margin-bottom: 10px;
+}
+.city-form{
+    margin-bottom: 15px;
+}
+.radio-form{
+    margin-bottom: 20px;
+}
+.checkbox-form{
+    margin-bottom: 20px;
+}
+.name-label{
+    float: left;
+    width: 10%;
+}
+.password-label{
+    float: left;
+    width: 10%;
+}
+.city-label{
+    float: left;
+    width: 10%;
+    padding-top: 0px;
+}
+.sever-label{
+    float: left;
+    width: 10%;
+}
+.radio-label{
+    float: left;
+    width: 10%;
+    margin-top:20px;
+}
+.checkbox-label{
+    float: left;
+    width: 10%;
+    padding-top: 15px;
+    margin-bottom: 10px;
+}
+.name-input{
+    float: left ;
+    width: 90%;
+    margin-bottom: 5px;
+}
+.password-input{
+    float: left ;
+    width: 90%;
+    margin-bottom: 15px;
+}
+.city-input{
+    float: left ;
+    width: 90%;
+    margin-top: 50px ;
+    margin-bottom: 20px;
+}
+.sever-option{
+    float: left ;
+    width: 90%;
+    margin-bottom: 15px;
+}
+.radio-choose{
+    float: left ;
+    width: 90%;
+    margin-bottom: 15px;
+}
+.checkbox-check{
+    float: left ;
+    width: 90%;
+}
+.button-form{
+    float: right;
+    width: 90%;
+    margin-top: 15px;
+}
+.button-login{
+    float: left;
+    width: 50px;
+    margin-right: 10px;
+}

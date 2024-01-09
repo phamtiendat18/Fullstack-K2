@@ -1,0 +1,42 @@
+
+.column-task {
+    min-width: 350px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    background: #fff;
+    
+}
+.column-header {
+    background: rgb(229, 229, 229);
+    border-radius: 10px 10px 0 0;
+    padding: 10px;
+}
+.column-main {
+    overflow-y: scroll;
+    max-height: 500px;
+}
+.column-footer {
+    
+    border-radius: 0 0 10px 10px;
+    padding: 10px;
+}
+.column-footer:hover {
+    background: rgb(229, 229, 229);
+    color: rgb(77, 221, 202);
+}
+::-webkit-scrollbar {
+    width: 4px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(77, 221, 202);
+    border-radius: 99px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(29, 160, 142);
+}

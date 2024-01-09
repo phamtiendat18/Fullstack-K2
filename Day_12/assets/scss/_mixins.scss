@@ -1,0 +1,34 @@
+@import "_variables";
+
+@mixin inputSize {
+  width: 100%;
+  height: 53px;
+  padding-left: 20px;
+  border-radius: 10px;
+  border: 1px solid $textColor;
+}
+@mixin buttonSize {
+  width: 100%;
+  height: 53px;
+  border-radius: 15px;
+  color: #fff;
+  outline: none;
+  border: none;
+  font-family: "Rajdhani";
+  font-weight: 700;
+  cursor: pointer;
+}
+@mixin checkInput {
+  &:valid,
+  &:focus {
+    border: 1px solid $buttonColor1;
+  }
+  &:valid ~ label {
+    translate: 0 -25px;
+    font-size: 13px;
+  }
+  &:focus ~ label {
+    translate: 0 -25px;
+    font-size: 13px;
+  }
+}

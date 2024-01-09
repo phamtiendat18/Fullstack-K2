@@ -1,0 +1,110 @@
+<h1>Danh sách khóa học</h1>
+<% if (msg.length) { %>
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+  <%= msg %>
+  <button
+    type="button"
+    class="btn-close"
+    data-bs-dismiss="alert"
+    aria-label="Close"
+  ></button>
+</div>
+<% } %>
+<div class="mb-3">
+  <a href="/add" class="btn btn-success">Thêm mới</a>
+</div>
+<form action="" class="mb-3">
+  <div class="row">
+    <div class="col-3">
+      <select name="status" class="form-select">
+        <option value="all">Tất cả</option>
+        <option value="active">Kích hoạt</option>
+        <option value="inactive">Chưa kích hoạt</option>
+      </select>
+    </div>
+    <div class="col-7">
+      <input
+        type="text"
+        class="form-control"
+        name="keyword"
+        placeholder="Từ khóa tìm kiếm ..."
+      />
+    </div>
+    <div class="col-2 d-grid">
+      <button class="btn btn-success">Tìm kiếm</button>
+    </div>
+  </div>
+</form>
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th width="5%">STT</th>
+      <th>Tên</th>
+      <th>Trạng thái</th>
+      <th>Giá</th>
+      <th>Thời gian</th>
+      <th width="5%">Sửa</th>
+      <th width="5%">Xóa</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% courses.forEach((course, index) => { %>
+
+    <tr>
+      <td><%= index+1 %></td>
+      <td><%= course.name %></td>
+      <td><%= course.status ? "kích hoạt" : "Chưa kích hoạt" %></td>
+      <td><%= course.price %></td>
+      <td><%= moment(course.create_at).format('DD/MM/YYYY HH:mm:ss') %></td>
+      <td>
+        <a href="/edit/<%= course.id %>" class="btn btn-warning">Sửa</a>
+      </td>
+      <td>
+        <button
+          class="btn btn-danger"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal<%=course.id%>"
+        >
+          Xóa
+        </button>
+        <div
+          class="modal fade"
+          id="exampleModal<%=course.id%>"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">
+                  Vui lòng xác nhận
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">Bạn có xác nhận xóa không ?</div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Hủy
+                </button>
+                <form action="/delete/<%= course.id %>" method="post">
+                  <button class="btn btn-danger">Xóa</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </td>
+    </tr>
+    <% }) %>
+  </tbody>
+</table>

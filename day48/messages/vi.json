@@ -1,0 +1,16 @@
+{
+    "home": {
+        "mySkill": [
+            "Work Skill",
+            "Other Skill",
+            "Academic history"
+        ],
+        "Detailed skills": {
+            "workSkill": "I can work with HTML, CSS, JS, React, ...",
+            "otherSkill": "Some other basic skills",
+            "academicHistory": {
+                
+            }
+        }
+    }
+}

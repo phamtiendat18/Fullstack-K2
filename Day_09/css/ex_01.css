@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'Space Grotes';
+    src: url(../font/SpaceGrotesk-Regular.ttf);
+}
+@font-face {
+    font-family: 'Inter';
+    src: url(../font/Inter-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+    font-family: 'Inter';
+}
+h2{
+    font-family: 'Space Grotes';
+}
+.container{
+    width: 1060px;
+    margin: 30px auto;
+    position: relative;
+}
+.container .duration{
+    display: flex;
+    width: 400px;
+    flex-direction: column;
+}
+.container .duration .item{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 50px;
+}
+.container .duration .item:hover{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.container .duration .item:hover .info{
+    text-align: left;
+}
+.container .duration .item:hover .info > button{
+    background: rgb(151, 75, 8);
+    color: #fff;
+}
+.container .duration .item .info {
+    width: 250px;
+    text-align: right;
+} 
+.container .duration .item .info h2{
+    margin-bottom: 10px;
+}
+.container .duration .item .info p{
+    width: 100%;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+.container .duration .item .info button{
+    width: max-content;
+    padding: 3px 10px;
+    border: none;
+    border-radius: 99px;
+    background: rgba(188, 188, 188, 0.4);
+}
+.container .duration .item .circle{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: linear-gradient(to right, #028d27 0%, #00b348 100% );
+    box-shadow: 0 0 0 5px rgba(63, 151, 21, 0.2);
+    margin: 5px 25px;
+    position: relative;
+}
+.container .duration .item .circle::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: 1px;
+    rotate: 90deg;
+    right: -45px;
+    top: 80px;
+    background: rgba(0, 0, 0, 0.2);
+}
+.box {
+    width: 200px;
+    height: 330px;
+    padding: 10px;
+    background-image: url(../image/meeting-img.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: 0;
+    top: 100px;
+    right: 230px;
+}
+.box-color{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #1c64cf 0%, #072fc3 100%);
+    top: 10px;
+    left: 10px;
+}
+.image-box {
+    width: 300px;
+    height: 350px;
+    background-image: url(../image/interview-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+.box-color > div {
+    position: absolute;
+    bottom: 40px;
+    right: 30px;
+    color: white;
+
+}
+.box-color > div span{
+    font-size: 48px;
+    position: absolute;
+    bottom: 20px;
+    right: 0px;
+    font-family: 'Space Grotes';
+    font-weight: bold;
+}

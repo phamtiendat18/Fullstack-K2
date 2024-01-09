@@ -1,0 +1,60 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h1{
+    font-size: 25px;
+    width: max-content;
+    margin-left: 30px;
+    position: relative;
+    margin-bottom: 30px;
+}
+h1::after{
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    height: 3px;
+    width: 35%;
+    left: 0;
+    background-color: rgb(252, 149, 32);
+}
+h2{
+    font-size: 18px;
+    margin-left: 10px ;
+    margin-bottom: 25px;
+}
+.contact-box{
+    display: flex;
+}
+.information-company{
+    font-size: 12px;
+    opacity: 0.6;
+}
+.contact-right{
+    margin-left: 100px;
+    flex-basis: 50%;
+}
+div{
+    margin: 10px;
+
+}
+input{
+    width: 100%;
+    height: 25px;
+}
+textarea{
+    width: 100%;
+    height: 80px;
+}
+.button{
+    width: 115px;
+    height: 35px;
+    background-color: rgb(2, 220, 184);
+    border: 5px #05ceac;
+    color: white;
+}
+.location-company{
+    margin-bottom: 25px;
+}
+.email-adress{
+    margin-bottom: 25px;
+}

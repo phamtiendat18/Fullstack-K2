@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+.container {
+    width: 40%;
+    background: #4286F4;
+    padding: 20px 0;
+}
+.lesson {
+    width: calc(100% - 40px);
+    height: 30px;
+    border: 1px solid white;
+    background: #8BB3F4;
+    margin: 2px auto;
+    display: flex;
+    line-height: 30px;
+    padding-left: 10px;
+}
+.dragging {
+    width: calc(100% - 40px);
+    height: 30px;
+    border: 1px solid white;
+    background: #8BB3F4;
+    margin: 2px auto;
+    opacity: 0.5;
+    display: flex;
+    line-height: 30px;
+    padding-left: 10px;
+}
+.module {
+    width: calc(100% - 40px);
+    height: 30px;
+    border: 1px solid white;
+    background: #FF6F00;
+    margin: 2px auto;
+    display: flex;
+    line-height: 30px;
+    padding-left: 10px;
+}

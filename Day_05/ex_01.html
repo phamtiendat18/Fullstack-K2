@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/ex_01.css" />
+  </head>
+  <body>
+    <div class="contact">
+      <div class="header">
+        <h1>Hey there</h1>
+      </div>
+      <div class="content">
+        <p>
+          <span class="topic">We'd like to hear from you.</span> Send us your
+          message or just say hy with our <br />contact form or directly via
+          phone, we love to chat.
+        </p>
+      </div>
+      <div class="contact-form">
+        <div class="name" tabindex="1">
+          <span class="notification">Enter your name</span>
+          <div class="icon"><i class="fa-solid fa-user"></i></div>
+
+          <input
+            type="text"
+            name="name"
+            placeholder="&nbsp;&nbsp;Your name"
+            required
+          />
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <i class="fa-sharp fa-solid fa-x"></i>
+        </div>
+        <div class="email" tabindex="2">
+          <span class="notification">Enter your email</span>
+          <div class="icon"><i class="fa-sharp fa-solid fa-envelope"></i></div>
+          <input
+            type="email"
+            name="email"
+            placeholder="&nbsp;&nbsp;your@domain.com"
+          />
+          <div class="stars"><i class="fa-solid fa-star"></i></div>
+          <i class="fa-sharp fa-solid fa-x"></i>
+        </div>
+        <div class="phone-number" tabindex="3">
+          <span class="notification">Enter phone number</span>
+          <div class="icon"><i class="fa-solid fa-mobile"></i></div>
+          <input
+            type="text"
+            name="phone-number"
+            placeholder="&nbsp;&nbsp;+84 12412"
+          />
+          <i class="fa-sharp fa-solid fa-x"></i>
+        </div>
+
+        <div class="subject" tabindex="4">
+          <span class="notification">Enter your subject</span>
+          <div class="icon">
+            <i class="fa-sharp fa-solid fa-book"></i>
+          </div>
+          <select name="subject" id="subject">
+            <option value="subject">&nbsp;&nbsp;Subject</option>
+            <option value="HTMl">&nbsp;&nbsp;HTML</option>
+          </select>
+          <div class="subject-icon">
+            <i class="fa-solid fa-caret-up"></i>
+            <i class="fa-solid fa-caret-down"></i>
+          </div>
+        </div>
+        <div class="message" tabindex="5">
+          <span class="notification">Enter your message</span>
+          <div class="message-icon"><i class="fa-solid fa-message"></i></div>
+          <textarea name="message" id="message" placeholder="Message">
+          </textarea>
+          <div class="message-star"><i class="fa-solid fa-star"></i></div>
+          <i class="fa-sharp fa-solid fa-x"></i>
+        </div>
+      </div>
+      <div class="contact-bottom">
+        <div class="contact-bottom-right">
+          <div class="checkbox">
+            <input type="checkbox" id="checkbox" tabindex="6" />
+            <i class="fa-solid fa-check"></i>
+          </div>
+          <label for="checkbox">
+            &nbsp;&nbsp;Send me a copy of this message
+          </label>
+        </div>
+        <button tabindex="7">send</button>
+      </div>
+    </div>
+  </body>
+</html>

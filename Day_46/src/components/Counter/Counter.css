@@ -1,0 +1,13 @@
+.counter {
+    display: flex;
+    width: 70px;
+    height: 20px;
+    justify-content: space-between;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+}
+.counter > button {
+    width: 20px;
+    border: 0;
+    border-radius: 3px;
+}

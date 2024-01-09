@@ -1,0 +1,13 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    background: #ccc;
+    padding: 20px;
+}
+.header .logo {
+    cursor: pointer;
+}
+
+.header .btn-cart {
+    cursor: pointer;
+}

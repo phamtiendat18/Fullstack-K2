@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        outline: none;
+      }
+      body {
+        background: #8758ff;
+      }
+      .wrapper {
+        width: 440px;
+        margin: 100px auto;
+        background: #1a1a40;
+        padding: 40px 30px;
+        border-radius: 5px;
+      }
+      .wrapper h1 {
+        color: #fff;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 30px;
+      }
+      .form-input {
+        background: #8758ff;
+        padding: 1px;
+        border: none;
+        display: flex;
+        margin-bottom: 30px;
+      }
+      .form-input input {
+        width: calc(100% - 80px);
+        height: 35px;
+        background: #1a1a40;
+        border: none;
+        color: #fff;
+        padding-left: 15px;
+      }
+      .form-input button {
+        border: none;
+        width: 80px;
+        background: #8758ff;
+        color: #fff;
+        cursor: pointer;
+      }
+      .box {
+        width: 100%;
+        height: 50px;
+        background: #8758ff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #fff;
+        border-radius: 5px;
+        padding: 15px;
+        margin-bottom: 20px;
+      }
+      .box .icon-box {
+        display: flex;
+        column-gap: 10px;
+      }
+      .edit-form {
+        background: #8758ff;
+        padding: 1px;
+        border: none;
+        display: flex;
+        margin-bottom: 30px;
+      }
+      .edit-form input {
+        width: calc(100% - 80px);
+        height: 35px;
+        background: #1a1a40;
+        border: none;
+        color: #fff;
+        padding-left: 15px;
+      }
+      .edit-form button {
+        border: none;
+        width: 80px;
+        background: #8758ff;
+        color: #fff;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Get Things Done !</h1>
+      <div class="container">
+        <div class="form-input">
+          <input
+            class="input-task"
+            type="text"
+            placeholder="What is the task today?"
+          />
+          <button class="btn">Add task</button>
+        </div>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

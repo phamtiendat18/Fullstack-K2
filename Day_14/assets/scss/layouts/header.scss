@@ -1,0 +1,121 @@
+// HEADER
+.header {
+  height: 108px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0 5px 3px;
+  position: relative;
+
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  &-right {
+    margin-top: 51px;
+    display: flex;
+    column-gap: 50px;
+    align-items: center;
+    justify-content: flex-end;
+
+    .logo {
+      display: none;
+    }
+    .menu {
+      ul {
+        display: flex;
+        column-gap: 50px;
+        font-weight: 600;
+        li {
+          .menu-link {
+            position: relative;
+            padding-bottom: 34px;
+
+            &:hover,
+            &.active {
+              color: $green-800;
+            }
+            &:hover::after,
+            &.active::after {
+              width: 100%;
+            }
+            &::after {
+              content: "";
+              position: absolute;
+              width: 0;
+              height: 2px;
+              background: $green-800;
+              bottom: 0;
+              left: 0;
+              transition: 0.2s linear;
+            }
+          }
+        }
+      }
+    }
+    .cart-icon {
+      position: relative;
+      span {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: $orange-700;
+        font-size: 1rem;
+        text-align: center;
+        line-height: 15px;
+        color: #fff;
+        position: absolute;
+        top: -5px;
+        right: -5px;
+      }
+    }
+  }
+  .bar-icon {
+    width: 30px;
+    height: 30px;
+    border: 1px solid $grey-200;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .header {
+    input:checked ~ .header-right {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      width: 40vw;
+      row-gap: 20px;
+      top: 0;
+      left: 0;
+      margin: 0;
+      background: #fff;
+      padding: 50px 0;
+      z-index: 2;
+
+      .logo {
+        display: block;
+      }
+    }
+    input:checked ~ .header-right .menu ul {
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+    }
+    .col-10 {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    &-right {
+      display: none;
+      width: 0;
+      transition: width 0.5s linear;
+    }
+    .bar-icon {
+      display: block;
+      margin-right: 50px;
+    }
+  }
+}

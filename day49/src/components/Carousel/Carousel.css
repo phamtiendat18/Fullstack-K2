@@ -1,0 +1,29 @@
+.slick-track {
+    width: 100vw;
+}
+.slick-slide {
+    height: fit-content !important;
+}
+.slick-dots {
+    position: absolute !important;
+    width: fit-content !important;
+    left: 50%;
+    translate: -50% -50%;
+    bottom: 30px !important;
+    z-index: 20 !important;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex !important;
+    padding: 10px !important;
+    border-radius: 99px !important;
+    align-items: center;
+}
+.slick-arrow.slick-next {
+    display:  none !important;
+}
+video {
+    min-width: 100vw !important;
+}
+.slick-active .custom-dot {
+    background: orange !important;
+    z-index: 30 !important;
+}

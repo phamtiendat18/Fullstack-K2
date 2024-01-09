@@ -1,0 +1,13 @@
+@mixin setImage {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  object-fit: contain;
+}
+
+@mixin sizeLogo {
+  width: 98px;
+  height: 46px;
+  object-fit: contain;
+  margin-bottom: 60px;
+}

@@ -1,0 +1,21 @@
+{
+    "home": {
+        "headerName": "Pham Tien Dat",
+        "headerTitle": "Continuously learning and gaining experience to become better.",
+        
+        "mySkill": {
+             "hello": {
+                "name": "Work Skill",
+                "detail": "I can work with HTML, CSS, JS, React, ..."
+            },
+            "abc": {
+                "name": "Other Skill",
+                "detail": "I can work with HTML, CSS, JS, React, ..."
+            },
+            "ccc": {
+                "name": "Academic history",
+                "detail": "I can work with HTML, CSS, JS, React, ..."
+            }
+        } 
+    }
+}

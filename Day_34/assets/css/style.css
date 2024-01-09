@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 0; */
+}
+
+html {
+    font-size: 10px;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+button {
+    border: none;
+    border-radius: 7px;
+    color: white;
+    background: black;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.overlay {
+    visibility: hidden;
+}
+.overlay.show {
+    visibility: visible;
+    position: fixed;
+    inset: 0;
+    background: rgba(117, 116, 116, 0.5);
+}
+
+.container {
+    width: 750px;
+    margin: 200px auto;
+}
+.container .header{
+    font-size: 4rem ;
+    margin: 20px 0;
+    text-align: center;
+} 
+.container .todo-main .search-form {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    column-gap: 20px;
+}
+.container .todo-main .search-form .search-wrapper {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+    position: relative;
+}
+.container .todo-main .search-form .search-wrapper .search {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 7px;
+    padding: 15px;
+    font-size: 1.6rem;
+}
+.container .todo-main .search-form .search-wrapper .btn-search {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    width: 45px;
+    height: 40px;
+    background: rgb(41, 87, 218);
+    translate: 0 -50%;
+}
+.container .todo-main .search-form .search-wrapper .btn-search:hover {
+    background: rgb(32, 67, 162);
+}
+.container .todo-main .search-form .btn-add {
+    height: 45px;
+    width: 130px;
+    background: rgb(4, 120, 87);
+}
+.container .todo-main .search-form .btn-add:hover {
+    background: rgb(5, 102, 75);
+}
+.todo {
+    width: 100%;
+    height: 70px;
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    font-size: 1.6rem;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px ;
+}
+.todo .actions {
+    display: flex;
+    column-gap: 10px;
+}
+.todo .actions button {
+    width: 40px;
+    height: 40px;
+}
+.todo .actions .btn-delete {
+    background: rgb(186, 26, 70);
+}
+.todo .actions .btn-delete:hover {
+    background: rgb(149, 21, 60);
+}
+.todo .actions .btn-edit {
+    background: rgb(41, 87, 218);
+}
+.todo .actions .btn-edit:hover {
+    background: rgb(32, 67, 162);
+}
+.todo .actions .btn-complete {
+    background: rgb(156, 163, 175);
+}
+.todo .actions .btn-complete:hover  {
+ background: rgb(5, 102, 75) ;
+}
+.container .btn-completed {
+    width: 200px;
+    height: 40px;
+    font-size: 1.6rem;
+    background: rgb(156, 163, 175);
+    margin-top: 15px;
+}
+.container .btn-completed:hover {
+    background: rgb(107, 114, 128);
+}
+.add-form {
+    visibility: hidden;
+    opacity: 0;
+}
+.add-form.show {
+    visibility: visible;
+    opacity: 1;
+    /* transition: 0.2s linear; */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 450px;
+    /* height: 200px; */
+    background: white;
+    z-index: 3;
+
+}
+.add-form .add-todo {
+    border: 1px solid rgb(148, 148, 148);
+    width: 400px;
+    height: 60px;
+    margin: 20px 25px;
+    padding: 15px;
+    border-radius: 7px;
+}
+.add-form .add-actions {
+    margin: 30px auto;
+    display: flex;
+    column-gap: 30px;
+    justify-content: center;
+}
+.add-form .add-actions button {
+    width: 75px;
+    height: 40px;
+}
+.add-form .add-actions .btn-save {
+    background: rgb(4, 120, 87);
+}
+.add-form .add-actions .btn-cancel {
+    color: rgba(0, 0, 0, 0.3);
+    font-weight: 600;
+    background: white;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+}
+

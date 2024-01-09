@@ -1,0 +1,43 @@
+.wrapper {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0 150px;
+    /* background: rgba(255, 255, 255, 0.9); */
+}
+.header {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    max-height: 100px;
+    justify-content: space-between;
+    
+}
+
+.header .left-header > a {
+    display: flex;
+    height: 100%;
+    column-gap: 20px;
+    align-items: center;
+}
+.header .left-header a h3 {
+    color: rgb(0, 234, 0);
+    font-weight: 700;
+}
+.header .left-header > a .my-logo {
+    width: 30px;
+}
+.header .right-header {
+    display: flex;
+    column-gap: 15px;
+    align-items: center;
+}
+.header .right-header .f8 .logo-f8 {
+    width: 30px;
+}
+.facebook {
+    color: #0866FF
+}
+.youtube {
+    color: rgb(255, 0, 0)
+}

@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.infor-box{
+    margin: 50px;
+}
+.adress-infor{
+    background: rgb(235, 235, 235);
+    width: 30%;
+    float: left;
+    height: 250px;
+}
+.google-map{
+    float: right;
+    margin: 0;
+    width: 70%;
+
+}
+h1{
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.location{
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+.contact-infor{
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+nav{    
+    box-sizing: content-box;
+    width: 40%;
+}
+a{
+    font-size: 12px;
+}
+.menu ul {
+    border: 2px solid orange;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 50px;
+    margin-top: 30px;
+    overflow: hidden;
+    box-sizing: content-box;
+  }
+  .menu li {
+    float: left;
+  }
+  .menu li a {
+    display: block;
+    color: orange;
+    text-align: center;
+    padding: 5px 15px;
+    text-decoration: none;
+  }

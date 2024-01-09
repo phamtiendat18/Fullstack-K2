@@ -1,0 +1,148 @@
+@font-face {
+    font-family: 'Nunito';
+    src: url(../font/Nunito-VariableFont_wght.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url('http://uiwebsoft.com/justlog/login-one/images/login-bg2.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: 'Nunito';
+    color: #717171;
+}
+.box{
+    display: flex;
+    border: none;
+    width: max-content;
+    height: 400px;
+    margin: 380px auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px  rgb(201, 199, 199);
+    position: relative;
+}
+.left-box{
+    width: 300px;
+    background-color: #ff574d;
+    color: white;
+    border-radius: 10px 0 0 10px;
+    text-align: center;
+}
+.left-box .box-header{
+    display: flex;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    justify-content: center;
+
+}
+.left-box .box-header .logo{
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: #ff574d;
+    margin-right: 10px;
+}
+.left-box .box-content{
+    margin: 0 10px;
+}
+.left-box .box-footer button{
+    width: 130px;
+    height: 30px;
+    background-color: white;
+    color: #ff574d;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    margin: 30px auto;
+}
+.left-box .box-footer .contact-icon i{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(255, 31, 31);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+.left-box .box-footer .contact-icon{
+    display: flex;
+    justify-content: center;
+}
+.right-box{
+    width: 400px;
+    background-color: white;
+    border-radius: 0 10px 10px 0;
+    text-align: center;
+}
+.right-box h2{
+    position: relative;
+    margin: 40px;
+    color: black;
+}
+.right-box h2::before{
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 1px;
+    background-color: #ff574d;
+    bottom: -10px;
+    left: 137px;
+}
+.right-box h2 span{
+    color: #ff574d;
+}
+.right-box .login input{
+    width: 300px;
+    height: 40px;
+    border:1px solid #717171;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px  rgb(201, 199, 199);
+    margin-bottom: 20px;
+}
+.right-box .box-bottom .remember-forget{
+    display: flex;
+    width: 300px;
+    margin: 0 50px;
+    border: none;
+    margin-bottom: 20px;
+}
+.right-box .box-bottom .remember-forget #checkbox{
+    width: 18px;
+    height: 18px;
+    margin-right: 3px;
+}
+.right-box .box-bottom .remember-forget span{
+    margin-left: 52px;
+}
+.right-box .box-bottom>button{
+    width: 300px;
+    height: 40px;
+    background-color: #ff574d;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+.arrow{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+    background-color: white;
+    color: #ff574d;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 1px 1px 1px 2px  rgb(239, 236, 236);
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 280px;
+    top: 180px;
+}

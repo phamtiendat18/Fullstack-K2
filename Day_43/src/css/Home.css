@@ -1,0 +1,80 @@
+.products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0;
+}
+.products .wrapper {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.products .wrapper .product-item {
+  display: flex;
+  width: 20%;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  row-gap: 10px;
+  background: rgb(245, 245, 245);
+}
+.products .wrapper .product-item .product-image {
+  width: 100%;
+}
+.products .wrapper .product-item .product-name {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.products .wrapper .product-item .product-footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.products .wrapper .product-item .product-footer .price {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: red;
+}
+.products .wrapper .product-item .product-footer .add-btn {
+  width: 100px;
+  height: 30px;
+  border: 0;
+  background: red;
+  color: white;
+  cursor: pointer;
+}
+
+.cart {
+  background: #fff;
+  padding: 50px;
+  font-size: 1.4rem;
+}
+.cart > h2 {
+  font-size: 2.4rem;
+}
+.cart > h3 {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.cart-table {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.cart .order-btn {
+  width: 100px;
+  height: 30px;
+  background: rgb(10, 255, 251);
+  border: 0;
+  color: white;
+  font-size: 1.6rem;
+  border-radius: 5px;
+}
+.cart .order-btn:hover {
+  background: rgb(1, 222, 222);
+}
+
+/*# sourceMappingURL=Home.css.map */

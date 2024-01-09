@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box-content{
+    margin: 20px 50px;
+}
+
+.box-content .random-color{
+    background-color: orange;
+    color: white;
+    margin-bottom: 10px;
+    position: relative;
+}
+.box-content .theme-color{
+    background: orange;
+    color: white;
+    margin-bottom: 10px;
+    position: relative;
+}
+.box-content .change-icon{
+    background-color: orange;
+    color: white;
+    position: relative;
+}
+
+.box-content .content{  
+    display: none;
+}
+.box-content input:checked ~ .content  {
+    display: block;
+    background-color: white;
+    color: black;
+}
+.box-content input:checked ~ .fa-sharp.fa-solid.fa-plus{
+    visibility:hidden ;
+}
+.box-content input:checked ~ .fa-sharp.fa-solid.fa-minus{
+    visibility: visible;
+}
+label{
+    position: relative;
+    display: flex;
+    align-items: center;       
+    height: 30px;  
+    left: 30px;
+}
+#random-color{
+    position: absolute;
+    display: none;   
+}
+#theme-color{
+    position: absolute;
+    display: none;  
+}
+#change-icon{
+    position: absolute;
+    display: none;  
+}
+.fa-sharp.fa-solid.fa-plus{
+    position: absolute;
+    left: 6px;
+    top: 6px;
+}
+.fa-sharp.fa-solid.fa-minus{
+    position: absolute;
+    left: 6px;
+    top: 6px;
+    visibility: hidden;
+}

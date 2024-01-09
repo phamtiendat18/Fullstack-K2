@@ -1,0 +1,38 @@
+<h1 class="text-center text-primary">Đăng nhập</h1>
+
+<form action="" class="mb-3 col-5 mx-auto" method="post">
+  <% if (msg.length) { %>
+  <div class="alert alert-warning alert-dismissible fade show" role="alert">
+    <%= msg %>
+    <button
+      type="button"
+      class="btn-close"
+      data-bs-dismiss="alert"
+      aria-label="Close"
+    ></button>
+  </div>
+  <% } %>
+  <div class="mb-3">
+    <label for="">Email</label>
+    <input
+      type="email"
+      class="form-control"
+      placeholder="Email của bạn..."
+      name="email"
+      value="<%= req.old.email %>"
+    />
+    <span class="text-danger"><%= req.errors.email %></span>
+  </div>
+  <div class="mb-3">
+    <label for="">Mật khẩu</label>
+    <input
+      type="password"
+      class="form-control"
+      placeholder="Mật khẩu của bạn..."
+      name="password"
+      value="<%= req.old.password %>"
+    />
+    <span class="text-danger"><%= req.errors.password %></span>
+  </div>
+  <button class="btn btn-primary col-12">Đăng nhập</button>
+</form>

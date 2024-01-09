@@ -1,0 +1,11 @@
+.task-item {
+    min-height: 100px;
+    padding: 20px;
+    background: rgb(229, 229, 229);
+    margin: 5px;
+    border-radius: 5px;
+}
+.task-item > p {
+    font-size: 20px;
+    font-weight: 500;
+}

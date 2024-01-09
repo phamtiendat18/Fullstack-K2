@@ -1,0 +1,299 @@
+@font-face {
+    font-family: 'Lobster';
+    src: url(..//font/Lobster-Regular.ttf);
+}
+@font-face {
+    font-family: 'Lato';
+    src: url(../font/Lato-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 15px;
+    font-family: Lato;
+}
+h1{
+    font-family: Lobster;
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+.content{
+    color: rgba(0, 0, 0, 0.41);
+    margin-bottom: 20px;
+}
+.topic{
+    color: red;
+}
+.contact{
+    margin-left: 20px;
+}
+.name{
+    width: 502px;
+    height: 55px;
+    background: rgba(0, 0, 0, 0.41);
+    color: white;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+    
+}
+.contact .contact-form input{
+    position: absolute;
+    width: 450px;
+    height: 50px;
+    border: none;
+    right: 2px;
+    outline: none;
+}
+.icon{
+    width: 50px;
+    height: 50px; 
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.email{
+    width: 502px;
+    height: 55px;
+    background: rgba(0, 0, 0, 0.41);
+    color: white;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+.phone-number{
+    width: 502px;
+    height: 55px;
+    background: rgba(0, 0, 0, 0.41);
+    color: white;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+.subject{
+    width: 502px;
+    height: 55px;
+    background: rgba(0, 0, 0, 0.41);
+    color: white;
+    display: flex;
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+.message{
+    width: 502px;
+    height: 205px;
+    background: rgba(0, 0, 0, 0.41);
+    color: white;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+.subject select{
+    width: 450px;
+    height: 50px;
+    border: none;
+    position: absolute;
+    right: 2px;
+    display: flex;
+    top: 2px;
+    margin-bottom: 20px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none
+}
+
+.stars{
+    position: absolute;
+    font-size: 7px;
+    background: transparent;
+    right: 5px;
+    color:  rgba(0, 0, 0, 0.41);
+}
+.message textarea{
+    width: 450px;
+    height: 200px;
+    border: none;
+}
+.message-icon{
+    width: 50px; 
+    text-align: center;
+    position: relative;
+    top: -76px;
+}
+.message-star{
+    position: absolute;
+    font-size: 7px;
+    background: transparent;
+    right: 5px;
+    color:  rgba(0, 0, 0, 0.41);
+    top: 18px;
+}
+.subject-icon{
+    width: 9px;
+    height: 50px;
+    position: absolute;
+    font-size: 11px;
+    background: transparent;
+    right: 8px;
+    color:  rgba(0, 0, 0, 0.41);
+}
+.fa-solid.fa-caret-up{
+    position: absolute;
+    top: 17px;
+    height: 10px;
+}
+.fa-solid.fa-caret-down{
+    position: absolute;
+    bottom: 17px ;
+    height: 10px;
+}
+.contact-bottom .contact-bottom-right{
+    position: absolute;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-bottom .contact-bottom-right .checkbox{
+    display: flex;
+    position: relative;
+    width: 22px;
+    height: 22px;
+    background-color: rgba(0, 0, 0, 0.41);
+    align-items: center;
+    justify-content: center;
+}
+.contact-bottom .contact-bottom-right .checkbox #checkbox{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: none;
+}
+.fa-solid.fa-check{
+    position: absolute;
+    display: flex ;
+    width: 22px;
+    height: 22px;
+    left: 4px;
+    top: 4px;
+}
+.contact-bottom{
+    position: relative;
+    width: 502px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-bottom button{
+    position: absolute;
+    background: red;
+    color: white;
+    width: 110px;
+    height: 35px;
+    text-transform: uppercase;
+    border: none;
+    right: 0px;
+}
+.notification{
+    position: absolute;
+    width: 120px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -60px;
+    left: 30px;
+    opacity: 0;
+
+}
+.notification::before{
+    content: "";
+    position: absolute;
+    left: 30%;
+    top: 100%;
+    transform: translateX(-50%);
+    border: 10px solid;
+    border-color: black transparent transparent transparent;
+    
+}
+.name:focus, .name:focus .notification{
+    background-color: black;
+    opacity: 1;
+}
+.name input:focus .stars, .name:focus  .stars{
+    visibility: hidden;
+}
+.name input:focus .fa-sharp.fa-solid.fa-x, .name:focus .fa-sharp.fa-solid.fa-x{
+    color: black;
+    visibility: visible;
+}
+.email:focus, .email:focus .notification{
+    background-color: black;
+    opacity: 1;
+}
+.email:focus  .stars{
+    visibility: hidden;
+}
+.email:focus .fa-sharp.fa-solid.fa-x{
+    color: black;
+    visibility: visible;
+}
+.phone-number:focus, .phone-number:focus .notification{
+    background-color: black;
+    opacity: 1;
+}
+
+.phone-number:focus .fa-sharp.fa-solid.fa-x{
+    color: black;
+    visibility: visible;
+}
+.subject:focus, .subject:focus .notification{
+    background-color: black;
+    opacity: 1;
+}
+.message:focus, .message:focus .notification{
+    background-color: black;
+    opacity: 1;
+}
+.message textarea:focus  .message-star{
+    visibility: hidden;
+}
+.message textarea:focus .fa-sharp.fa-solid.fa-x{
+    color: black;
+    visibility: visible;
+    top: 18px;
+}
+.name:hover{
+    background-color: black;
+}
+.email:hover{
+    background-color: black;
+}
+.phone-number:hover{
+    background-color: black;
+}
+.subject:hover{
+    background-color: black;
+}
+.message:hover{
+    background-color: black;
+}
+.fa-sharp.fa-solid.fa-x{
+    position: absolute;
+    font-size: 7px;
+    background: transparent;
+    right: 5px;
+    color:  rgba(0, 0, 0, 0.41);
+    visibility: hidden;
+}
+

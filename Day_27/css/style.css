@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+h3 {
+    margin: 20px 10px;
+}
+
+.product-list td {
+    height: 40px;
+}
+.products input {
+    width: 95%;
+    margin: 0 2.5%;
+}
+.product-list button {
+    width: 100%;
+}
+button {
+    cursor: pointer;
+}

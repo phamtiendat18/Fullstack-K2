@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.info {
+  width: 400px;
+  border: 1px solid black;
+  padding: 15px;
+  border-radius: 10px;
+}
+.info .wrapper {
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  text-align: center;
+  padding: 30px;
+  border-radius: 10px;
+}
+.info .wrapper .profile .avatar {
+  width: 100%;
+  text-align: center;
+}
+.info .wrapper .profile .avatar img {
+  width: 60px;
+  object-fit: contain;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.info .wrapper .profile .greeting {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.info .wrapper .profile .local {
+  margin-bottom: 10px;
+}
+.info .wrapper .profile .email {
+  margin-bottom: 10px;
+}
+.info .wrapper .form-send-email {
+  text-align: left;
+}
+.info .wrapper .form-send-email .user-email {
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid green;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.info .wrapper .message {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid green;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.info .wrapper .send-btn {
+  width: 100%;
+  height: 40px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  background: green;
+  border-radius: 5px;
+  border: 0;
+  color: #fff;
+}
+.info .wrapper .logout-btn {
+  width: 100px;
+  height: 40px;
+  background: rgb(253, 52, 52);
+  color: #fff;
+  border-radius: 5px;
+  border: 0;
+}
+
+/*# sourceMappingURL=MainPage.css.map */

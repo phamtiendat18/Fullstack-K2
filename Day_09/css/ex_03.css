@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 'Space Grotes';
+    src: url(../font/SpaceGrotesk-Regular.ttf);
+}
+@font-face {
+    font-family: 'Inter';
+    src: url(../font/Inter-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+body{
+    text-align: center;
+    font-family: 'Inter';
+}
+h1{
+    margin-top: 20px;
+}
+p{
+    padding: 20px;
+}
+form{
+    width: 960px;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+form .input-box{
+    width: 450px;
+    margin: 10px auto;
+    position: relative;
+}
+form .input-box input{
+    width: 100%;
+    height: 55px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 25px 10px 10px 10px;
+}
+
+form label{
+    position: absolute;
+    color: rgba(0, 0, 0, 0.5);
+    top: 15px;
+    left: 10px;
+    /* transition: 0.4s ease; */
+}
+
+form .input-box input:focus{
+    border: 1px solid rgb(0, 101, 209) ;
+}
+form .input-box input:valid, form .input-box input:focus ~ label{
+    transform: translateY(-10px);
+    font-size: 0.8em;
+    transition: 0.4s ease;
+
+}
+
+form label::after{
+    content: "\f005";
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    position: absolute;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 5px;
+    right: -10px;
+}
+form .department-box{
+    position: relative;
+    width: 450px;
+    margin: 10px auto;
+}
+form .department-box select{
+    width: 100%;
+    height: 55px;
+    padding: 10px;
+    color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    font-size: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    text-indent: 1px;
+    text-overflow: '';
+}
+form .department-box i{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 13px;
+}
+
+form .message-box{
+    width: 930px;
+    position: relative;
+    margin: 10px auto;
+}
+form .message-box textarea{
+    width: 100%;
+    height: 150px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 25px 10px;
+}
+form .message-box textarea:focus{
+    border: 1px solid rgb(0, 101, 209) ;
+}
+
+form .message-box textarea:focus ~ label{
+    transform: translateY(-10px);
+    font-size: 0.8em;
+}
+form button{
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 99px;
+    background: rgb(0, 101, 209);
+    color: #fff;
+    margin: 0px auto;
+    cursor: pointer;
+}

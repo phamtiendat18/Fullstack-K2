@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper {
+    display: flex;
+    column-gap: 20px;
+    padding: 50px;
+}
+.wrapper .image {
+    width: 400px;
+    height: 250px;
+    background-image: url(../img/zoom_img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.wrapper .image .zoom {
+    position: absolute;
+    width: 100px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.3);
+}

@@ -1,0 +1,108 @@
+.best-seller{
+    text-align: center;
+}
+header{
+    font-size: 32px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 10px auto;
+}
+.menu{
+    display: flex;
+    font-size: 10px;
+    box-sizing: content-box;
+    padding: 0 auto;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    
+}
+.menu-item{
+    background: rgb(217, 216, 216);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0 1px;
+    width: auto;
+    padding: 0 20px;
+}
+.products{
+    display: flex;
+}
+.product-image{
+    height: 200px;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: content-box;
+}
+.best-seller{
+    width: 70%;
+    margin: auto;
+}
+.product-item{
+    width: 100%;
+    height: 350px;
+    margin: 30px;
+}
+.product-top{
+    position: relative;
+    height: 250px;
+}
+.product-top img{
+    position: absolute;
+    padding: 0px;
+    left: 0;
+    margin: 0px;
+    width: 100%;
+    height: 250px;
+    transition: 1s opacity ease ease-in-out;
+}
+.product-top img.image-2:hover{
+    opacity: 0;
+    cursor: pointer;
+}
+.product-info{
+    width: 100%;
+    bottom: 0px;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 10px;
+}
+.product-describe{
+    padding-bottom: 5px;
+}
+.menu .menu-item:focus{
+    background: rgb(17, 17, 113);
+    color: white;
+}
+.cart-button{
+    position: absolute;
+    background: rgb(17, 17, 113);
+    color: white;
+    width: 100%;
+    height: 35px;
+    left: 0;
+    top: 135px;
+
+}
+.button-box{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 35px;
+    top: 85px;
+    margin-left: 3px ;    
+}
+.small-button{
+    margin: 5px;
+    width: 35px;
+    height: 35px;
+    background: rgb(17, 17, 113);
+    color: white;
+}
+.star-rating{
+    color: yellow;
+    margin-bottom: 10px;
+    font-size: 8px;
+}
+.star-rating i:focus ~ i{
+    color: black;
+}

@@ -1,0 +1,41 @@
+.footer {
+    width: 100%;
+    border-top: 1px solid black ;
+    padding-top: 20px;
+}
+.footer .contact-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.footer .contact-info .about-company {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.footer .contact-info .contact {
+    width: fit-content;
+    
+}
+.footer .contact-info .contact ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100px;
+    gap: 10px;
+    list-style: none;
+}
+.footer .contact-info .contact ul a {
+    color: orange;
+}
+.footer .contact-info .contact h3 {
+    font-weight: 500;
+    font-size: 24px;
+    color: rgb(255, 34, 34);
+    text-align: center;
+}
+.footer .copyright {
+    text-align: center;
+    background: rgb(255, 192, 44);
+}

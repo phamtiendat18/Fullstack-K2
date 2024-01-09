@@ -1,0 +1,167 @@
+@font-face {
+    font-family: 'Nunito';
+    src: url(../font/Nunito-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+body{
+    font-family: 'Nunito';
+}
+input{
+    display: none;
+}
+body > label::after{
+    content: "\f07a";
+    position: absolute;
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    font-size: 13px; 
+    top: 3px;
+    padding-left: 5px ;
+}
+.shopping-cart{
+    width: 400px;
+    height: 550px;
+    visibility: hidden;
+    position: relative;
+    float: right;
+    
+}
+.shopping{
+    width: 100%;
+    height: 100vh;
+}
+body > input:checked ~ .shopping{
+    background: rgba(0, 0, 0, 0.5);
+}
+body > input:checked ~ .shopping .shopping-cart{
+    visibility: visible;
+    background: rgb(241, 241, 241);
+}
+.shopping .shopping-cart .products{
+    width: 100%;
+    height: 250px;
+    top: 50px;
+    overflow: auto;
+    counter-reset: totalProduct;
+    position: absolute;
+}
+.shopping .shopping-cart .products > div{
+    background-color: white;
+    width: 100%;
+    height: 120px;
+    padding: 15px;
+    margin-bottom: 2px;
+    position: relative;
+    counter-increment: totalProduct;
+}
+.shopping .shopping-cart .cart-header h2{
+    padding: 10px;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+}
+.shopping .shopping-cart .cart-header h2::after{
+    content: counter(totalProduct);
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 50%;
+    top: 5px;
+    left: 165px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    background-color: rgb(40, 130, 240);
+    color: white;
+}
+.shopping .shopping-cart .cart-header label{
+    float: right;
+    margin: 5px;
+    color: rgb(255, 115, 0);
+    font-size: 20px;
+}
+.shopping .shopping-cart .products > div::after{
+    content: "\f00d";
+    position: absolute;
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    top: 5px;
+    right: 10px;
+    color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+.shopping .shopping-cart .products > div img{
+    width: 80px;
+    height: 80px;
+    float: left;
+    margin-right: 20px;
+}
+.shopping .shopping-cart .products > div p:first-child{
+    color: rgba(0, 0, 0, 0.6);
+}
+.shopping .shopping-cart .products > div .product-info .quantity{
+    width: max-content;
+    padding:  2px 15px ;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 99px;
+    float: left;
+    margin-top: 20px;
+    color: rgba(0, 0, 0, 0.3);
+}
+.shopping .shopping-cart .products > div .product-info .price{
+    float: right;
+    margin-top: 20px;
+    margin-right: 50px;
+}
+.shopping .shopping-cart .cart-footer{
+    position: absolute;
+    top: 300px;
+    background: white;
+    width: 100%;
+    padding: 20px;
+}
+.shopping .shopping-cart .cart-footer button{
+    width: 350px;
+    height: 50px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+.shopping .shopping-cart .cart-footer button:nth-last-of-type(2){
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    color: rgba(0, 0, 0, 0.6);
+}
+.shopping .shopping-cart .cart-footer button:nth-last-of-type(1){
+    border: 2px solid rgb(40, 130, 240);
+    background: rgb(40, 130, 240);
+    color: white;
+}
+.shopping .shopping-cart .cart-footer p:first-of-type{
+    color: rgba(0, 0, 0, 0.6);
+}
+.shopping .shopping-cart .cart-footer p:last-of-type{
+    margin-top: 20px;
+    margin-left: 50px;
+    font-size: 18px;
+    padding: 10px;
+}
+.shopping .shopping-cart .cart-footer p:last-of-type::before{
+    content: "\f48b";
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    color: rgb(40, 130, 240);
+    line-height: 40px;
+    text-align: center ;
+    border-radius: 50%;
+    border: 1px solid rgb(40, 130, 240);
+    left: 20px;
+    bottom: 20px;
+}

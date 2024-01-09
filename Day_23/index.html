@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <button class="btn">Đăng nhập</button>
+    <div class="login-register">
+      <div class="wrapper">
+        <div class="btn-wrapper">
+          <button class="login-btn">Đăng nhập</button>
+          <button class="register-btn">Đăng ký</button>
+        </div>
+        <form name="login" class="login show">
+          <div class="container">
+            <span>với các tài khoản mạng xã hội</span>
+            <div class="account-box">
+              <div class="google">
+                <img src="./assets/images/google-png.webp" alt="" />
+              </div>
+              <div class="facebook">
+                <img src="./assets/images/facebook-img.png" alt="" />
+              </div>
+            </div>
+            <span>hoặc</span>
+            <label for="email-login">Email </label>
+            <input
+              type="email"
+              id="email-login"
+              class="email-login"
+              placeholder="Email"
+            />
+            <span class="email-error"></span>
+            <label for="password-login">
+              Mật khẩu
+              <img src="./assets/images/eye-lock.png" alt="" class="eye" />
+            </label>
+            <input
+              type="password"
+              id="password-login"
+              class="password-login"
+              placeholder="Mật khẩu"
+              name="password-login"
+            />
+            <span class="password-error"></span>
+
+            <a href="">Quên mật khẩu?</a>
+            <button class="btn-login">Đăng nhập</button>
+          </div>
+        </form>
+        <!-- End .login -->
+        <form name="register" class="register">
+          <div class="container">
+            <span class="has-tag"
+              >Hoàn thành đăng ký và bắt đầu trải nghiệm ngay!</span
+            >
+            <label for="name">Họ và tên</label>
+            <input type="text" id="name" class="name" placeholder="Họ và tên" />
+            <span class="name-error"></span>
+            <label for="email-register">Email </label>
+            <input
+              type="email"
+              id="email-register"
+              class="email-register"
+              placeholder="Email"
+            />
+            <span class="email-error"></span>
+            <label for="password-register">
+              Mật khẩu
+              <img src="./assets/images/eye-lock.png" alt="" class="eye" />
+            </label>
+            <input
+              type="password"
+              id="password-register"
+              class="password-register"
+              placeholder="Mật khẩu"
+            />
+            <span class="password-error"></span>
+            <p>
+              Bằng cách đăng ký tài khoản, bạn cũng đồng thời chấp nhận mọi
+              <a href="#">điều kiện về qui định và chính sách của Dân trí</a>
+            </p>
+            <button class="btn-register">Đăng ký</button>
+          </div>
+        </form>
+        <!-- End .register -->
+      </div>
+      <!-- End .wrapper -->
+      <div class="overlay"></div>
+      <!-- .overlay -->
+    </div>
+    <!-- End .container -->
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,143 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+html {
+  font-size: 14px;
+}
+body {
+  font-size: 14px;
+}
+.posts .post {
+  word-wrap: break-word;
+  padding: 10px;
+}
+.posts .post .header .info .avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: green   ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.post-form {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 10px;
+  padding: 10px;
+}
+.posts .post .header .info .avatar a {
+  color: white;
+  font-size: 20px;
+}
+.posts .post .header .info {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  margin: 100px 0 ;
+}
+.main > div {
+  width: 30%;
+}
+.main .aside-left {
+  width: 20%;
+  padding: 30px 15px;
+  position: fixed;
+  top: 100px;
+  left: 0;
+}
+.main .aside-left .user {
+  display: flex;
+  align-items: center;
+}
+
+.main .aside-left .user .user-name i {
+  margin-right: 10px;
+  font-size: 30px;
+  color: rgba(46, 46, 46, 0.2);
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  
+}
+.user-image  {
+  margin-right: 10px;
+  font-size: 30px;
+  color: rgba(46, 46, 46, 0.2);
+  cursor: pointer;
+}
+.main .aside-left .user .name {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.main .aside-right {
+  width: 20%;
+  position: fixed;
+  top: 100px;
+  right: 0;
+  
+}
+.main .aside-right .header-aside-right {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+  font-size: 16px;
+}
+  .main .posts .post {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+#calendar {
+  visibility: hidden;
+}
+#calendar.show {
+  top: 0;
+  left: 300px;
+  position: absolute;
+  visibility: initial;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+  border: 1px solid black;
+}
+#month {
+  width: 100%;
+  height: 20px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+}
+#month > button {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+#month > button:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+#dates {
+  width: 210px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.date {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.date:hover {
+  background: rgba(0, 0, 0, 0.2);
+}

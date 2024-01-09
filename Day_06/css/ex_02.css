@@ -1,0 +1,184 @@
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url(../font/Roboto-Light.ttf);
+}
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url(../font/Roboto-Regular.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Roboto-Light';
+    background: #ebf5fe;
+}
+.box-top{
+    width: 1060px;
+    display: flex;
+    margin: 20px auto;
+}
+.box-bottom{
+    width: 1060px;
+    display: flex;
+    margin: 20px auto;
+}
+.uxui-design{
+    background-color: white;
+    width: 320px;
+    height: 170px;
+    border: 2px solid transparent;  
+    box-shadow: 1px 1px 1px 5px rgba(203, 198, 198, 0.085);  
+    padding: 15px;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+.theme-development{
+    background-color: white;
+    width: 320px;
+    height: 170px;
+    border: 2px solid transparent;   
+    box-shadow: 1px 1px 1px 5px rgba(203, 198, 198, 0.085);   
+    padding: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+.digital-marketing{
+    background-color: white;
+    width: 320px;
+    height: 170px;
+    border: 2px solid transparent;
+    box-shadow: 1px 1px 1px 5px rgba(203, 198, 198, 0.085);  
+    padding: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+.web-design{
+    background-color: white;
+    width: 320px;
+    height: 170px;
+    border: 2px solid transparent;
+    box-shadow: 1px 1px 1px 5px rgba(203, 198, 198, 0.085);  
+    padding: 15px;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+.responsive-design{
+    background-color: white;
+    width: 320px;
+    height: 170px;
+    border: 2px solid transparent;  
+    box-shadow: 1px 1px 1px 5px rgba(203, 198, 198, 0.085);    
+    padding: 15px;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+.quick-support{
+    background-color: white;
+    width: 320px;
+    height: 170px;
+    border: 2px solid transparent;  
+    box-shadow: 1px 1px 1px 5px rgba(203, 198, 198, 0.085);    
+    padding: 15px;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+.top-box{
+    display: flex;
+    margin: 10px 0;
+    font-family: 'Roboto-Regular';
+}
+
+.uxui-design .top-box .icon{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: linear-gradient(to right, rgb(224, 83, 27), rgb(226, 111, 79) );
+    color: white;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+.theme-development .top-box .icon{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(24, 186, 70);
+    color: white;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+.digital-marketing .top-box .icon{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(227, 141, 37);
+    color: white;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+.web-design .top-box .icon{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(63, 120, 236);
+    color: white;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+.responsive-design .top-box .icon{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(186, 55, 219);
+    color: white;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+.quick-support .top-box .icon{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(164, 234, 60);
+    color: white;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+.content-box{
+    margin-bottom: 15px;
+}
+.bottom-box{
+    color: blue;
+}
+.uxui-design:hover {
+    border: 2px solid rgb(241, 37, 102);
+}
+.theme-development:hover{
+    border: 2px solid rgb(24, 186, 70);
+}
+.digital-marketing:hover{
+    border: 2px solid rgb(227, 141, 37);
+}
+.web-design:hover{
+    border:  2px solid rgb(63, 120, 236);
+}
+.responsive-design:hover{
+    border: 2px solid rgb(186, 55, 219);
+}
+.quick-support:hover{
+    border: 2px solid rgb(164, 234, 60);
+}

@@ -1,0 +1,150 @@
+@font-face {
+    font-family: 'Manrope';
+    src: url(../font/Manrope-Bold.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../background/background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: 'Manrope';
+    /* font-size: 14px; */
+}
+.mega-menu{
+    display: flex;
+}
+.mega-menu .logo{
+    padding: 15px 15px;
+    margin-left: 50px;
+    margin-right: auto;
+}
+.mega-menu .logo a{
+    text-decoration: none;
+    color: black;
+    font-size: 32px;
+}
+.mega-menu .menu{
+    display: flex;
+    list-style: none;
+}
+.mega-menu .menu > li > a{
+    text-decoration: none;
+    color: black;
+    padding: 30px 15px;
+    position: relative;
+    display: inline-block;
+    vertical-align: bottom;
+    margin: 0 10px;
+}
+.mega-menu .menu > li > a::after{
+    content: "\f107";
+    position: absolute;
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    font-size: 12px;
+    right: 2px;
+    bottom: 32px;
+}
+.mega-menu{
+    position: relative;
+}
+.mega-menu .utilities{
+    display: flex;
+    padding: 30px 15px;
+    margin-right: 50px;
+    margin-left: 10px;  
+}
+.mega-menu .utilities .detail-icon{
+    width: 20px;
+    height: 20px;
+    border: 2px solid black;
+    border-radius: 50%;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+.mega-menu .menu > li:last-child .drop-menu{
+    position: absolute;
+    left: 65px;
+    width: calc(100% - 130px);
+    height: 400px;
+    display: flex;
+    background: white;
+    border-radius: 5px;
+    visibility: hidden;
+    
+}
+.mega-menu .menu > li:active .drop-menu{
+    visibility: visible;
+}
+.mega-menu .menu > li:active {
+    color: rgba(69, 65, 65, 0.5);
+}
+.mega-menu .menu > li:hover .drop-menu{
+    visibility: visible;
+}
+.mega-menu .menu > li:hover a{
+    color: rgba(69, 65, 65, 0.5);
+}
+.mega-menu .menu > li .drop-menu .left-box{
+    border-right: 1px solid rgba(69, 65, 65, 0.159) ;
+    margin-top: 30px;
+    width: 420px;
+    height: 320px;
+}
+header{
+    padding: 0 5px 5px 5px;
+    text-transform: uppercase;
+}
+.mega-menu .menu > li .drop-menu .left-box .top-box{
+    padding: 0 30px;
+    margin-bottom: 50px;
+
+}
+.mega-menu .menu > li .drop-menu .left-box .top-box ul{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.mega-menu .menu > li .drop-menu .left-box .bottom-box{
+    padding: 0 30px;
+}
+.mega-menu .menu > li .drop-menu .left-box .bottom-box ul{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.mega-menu .menu > li .drop-menu .left-box ul li{
+    list-style: none;
+    padding: 5px;
+    margin-right: 100px;
+}
+.mega-menu .menu > li .drop-menu ul li a{
+    text-decoration: none;
+    color: black;
+}
+.mega-menu .menu > li .drop-menu .right-box{
+    margin-top: 30px;
+    padding: 0 30px;
+    width: 100%;
+    height: 300px;
+}
+.mega-menu .menu > li .drop-menu .right-box ul{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.mega-menu .menu > li .drop-menu .right-box ul li{
+    list-style: none;
+    padding: 5px;
+    margin-right: 200px;
+}

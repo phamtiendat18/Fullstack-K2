@@ -1,0 +1,8 @@
+.container {
+    margin: 50px;
+    width: fit-content;
+}
+ .column-list {
+    display: flex;
+    column-gap: 10px;
+ }

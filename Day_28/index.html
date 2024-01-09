@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="play-btn">
+        <i class="fa-solid fa-play"></i>
+      </div>
+      <div class="player">
+        <span>00:00</span>
+        <div class="progress-bar">
+          <span class="time">00:00</span>
+          <div class="progress">
+            <span></span>
+          </div>
+        </div>
+        <span>00:00</span>
+      </div>
+      <div class="karaoke-box">
+        <button class="karaoke-btn">
+          Hát Karaoke <i class="fa-solid fa-microphone"></i>
+        </button>
+      </div>
+    </div>
+    <div class="karaoke">
+      <div class="wrapper">
+        <div class="header-karaoke">
+          <h2>Karaoke</h2>
+          <i class="fa-solid fa-chevron-down" style="cursor: pointer"></i>
+        </div>
+        <div class="main-karaoke"></div>
+      </div>
+    </div>
+    <audio
+      class="audio"
+      src="https://a128-zmp3.zmdcdn.me/284f757cc37e5a9deb7ce5d25c789953?authen=exp=1694788397~acl=/284f757cc37e5a9deb7ce5d25c789953/*~hmac=0346ce66d5ff655bbbf7875fffbf0b67"
+    ></audio>
+    <script src="./js/lyric.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
