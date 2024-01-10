@@ -11,6 +11,7 @@ module.exports = async (req, res, next) => {
       const body = await schema.validate(data, {
         abortEarly: false,
       });
+      req.flash("old", data);
       return body;
     } catch (e) {
       const errors = Object.fromEntries(

@@ -23,7 +23,6 @@ router.get("/", (req, res, next) => {
     };
     // req.message = { msg: "Chào mừng bạn đã quay trở lại" };
     msg = req.flash("msg");
-    // console.log();
   } else {
     return res.redirect("/dang-nhap");
   }
@@ -32,5 +31,7 @@ router.get("/", (req, res, next) => {
 router.get("/dang-nhap", authController.login);
 router.post("/dang-nhap", authController.handleLogin);
 router.post("/log-out", authController.handleLogout);
+router.get("/dang-ky", authController.register);
+router.post("/dang-ky", authController.handleRegister);
 
 module.exports = router;

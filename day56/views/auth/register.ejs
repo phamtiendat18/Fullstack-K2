@@ -1,0 +1,66 @@
+<h1 class="text-center text-primary">Đăng Ký</h1>
+
+<form action="" class="mb-3 col-5 mx-auto" method="post">
+  <% if (msg.length) { %>
+  <div class="alert alert-danger alert-dismissible fade show" role="alert">
+    <%= msg %>
+    <button
+      type="button"
+      class="btn-close"
+      data-bs-dismiss="alert"
+      aria-label="Close"
+    ></button>
+  </div>
+  <% } %>
+  <div class="mb-3">
+    <label for="">Tên</label>
+    <input
+      type="text"
+      class="form-control"
+      placeholder="Tên của bạn..."
+      name="name"
+      value="<%= req.old.name %>"
+    />
+    <span class="text-danger"><%= req.errors.name %></span>
+  </div>
+  <div class="mb-3">
+    <label for="">Email</label>
+    <input
+      type="email"
+      class="form-control"
+      placeholder="Email của bạn..."
+      name="email"
+      value="<%= req.old.email %>"
+    />
+    <span class="text-danger"><%= req.errors.email %></span>
+  </div>
+  <div class="mb-3">
+    <label for="">Mật khẩu</label>
+    <input
+      type="password"
+      class="form-control"
+      placeholder="Mật khẩu của bạn..."
+      name="password"
+      value="<%= req.old.password %>"
+    />
+    <span class="text-danger"><%= req.errors.password %></span>
+  </div>
+  <div class="mb-3">
+    <label for="">Nhập lại mật khẩu</label>
+    <input
+      type="password"
+      class="form-control"
+      placeholder="Mật khẩu của bạn..."
+      name="rePassword"
+      value="<%= req.old.rePassword %>"
+    />
+    <span class="text-danger"><%= req.errors.rePassword %></span>
+  </div>
+  <button class="btn btn-primary col-12">Đăng ký</button>
+  <p>
+    Bạn đã có tài khoản ?
+    <a href="/dang-nhap" class="text-decoration-none"
+      >Quay lại trang đăng nhập</a
+    >
+  </p>
+</form>

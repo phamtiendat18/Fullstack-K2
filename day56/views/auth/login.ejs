@@ -2,7 +2,7 @@
 
 <form action="" class="mb-3 col-5 mx-auto" method="post">
   <% if (msg.length) { %>
-  <div class="alert alert-warning alert-dismissible fade show" role="alert">
+  <div class="alert <%= success ? "alert-success" : "alert-warning" %> alert-dismissible fade show" role="alert">
     <%= msg %>
     <button
       type="button"
@@ -35,4 +35,8 @@
     <span class="text-danger"><%= req.errors.password %></span>
   </div>
   <button class="btn btn-primary col-12">Đăng nhập</button>
+  <p>
+    Bạn chưa có tài khoản ?
+    <a href="/dang-ky" class="text-decoration-none">Đăng ký ngay</a>
+  </p>
 </form>
